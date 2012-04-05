@@ -1,3 +1,22 @@
+=========================================
+New README content
+=========================================
+This is a modified version of Getmail that adds an optional "use_peek" parameter 
+for IMAP retrievers.
+
+Example usage:
+
+[retriever]
+type = SimpleIMAPSSLRetriever
+server = imap.local 
+username = joe 
+password = hunter2 
+use_peek = true
+
+=========================================
+Original README content follows
+=========================================
+
 getmail version 4 -- a flexible, extensible mail retrieval system with
 support for POP3, IMAP4, SSL variants of both, maildirs, mboxrd files,
 external MDAs, arbitrary message filtering, single-user and domain-mailboxes,
