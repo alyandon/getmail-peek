@@ -363,6 +363,7 @@ class SimpleIMAPRetriever(IMAPRetrieverBase, IMAPinitMixIn):
         # .authenticate(), so we can't do this yet (?).
         ConfBool(name='use_cram_md5', required=False, default=False),
         ConfBool(name='use_kerberos', required=False, default=False),
+        ConfBool(name='use_peek', required=False, default=False),
     )
     received_from = None
     received_with = 'IMAP4'
@@ -404,6 +405,7 @@ class SimpleIMAPSSLRetriever(IMAPRetrieverBase, IMAPSSLinitMixIn):
         # .authenticate(), so we can't do this yet (?).
         ConfBool(name='use_cram_md5', required=False, default=False),
         ConfBool(name='use_kerberos', required=False, default=False),
+        ConfBool(name='use_peek', required=False, default=False),
     )
     received_from = None
     received_with = 'IMAP4-SSL'
